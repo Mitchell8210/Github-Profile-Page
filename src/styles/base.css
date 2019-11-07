@@ -1,0 +1,189 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* HEADER */
+.header{
+  display: flex;
+  background:#333;
+  color:white;
+  height:45px;
+  width:100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-left{
+  display: flex;
+  align-items: center;
+}
+.fa-github{
+font-size: 25px;
+}
+.github{
+  font-size: 25px;
+}
+.headerLinks{
+  display: flex;
+
+}
+.searchBox{
+  height:25px;
+  margin:10px;
+}
+.headerLinks div{
+  padding:10px;
+}
+.rightSideIcons{
+  display: flex;
+  justify-content: end;
+ 
+}
+.rightSideIcons div{
+  padding:10px;
+  text-align: right;
+}
+/* aside*/
+.asideContainer{
+  margin-left:100px;
+  margin-top:50px;
+}
+.imageContainer{
+  border:1px solid #777;
+  width:300px;
+  
+}
+.statusContainer{
+  width:300px;
+  display: flex;
+
+}
+img{
+  max-width: 100%;
+}
+.status{
+  padding-top:0px;
+  margin-top:0px;
+  padding-left:20px;
+}
+.fa-facebook{
+  color:black;
+  margin-left:10px;
+}
+.userName{
+  margin-top:20px;
+  font-weight: bolder;
+  font-size: 25px;
+}
+.login{
+  font-size: 25px;
+ color:#666;
+}
+
+/*/////MAIN SECTION */
+
+.mainContainer{
+  width:600px;
+
+  align-content: right;
+}
+.mainLinks{
+  display: flex;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #333;
+  margin-bottom: 20px;
+}
+.mainLinks div{
+  padding-right:15px;
+}
+
+/*//FIND REPOS LINE///*/
+.findRepositoryLine{
+  display: flex;
+}
+.findRepositoryLine input{
+  margin-right:20px;
+  height:30px;
+  width:200px;
+}
+.findRepositoryLine div{
+  margin-right:20px;
+}
+
+/*///RESPOSITORIES//*/
+
+.repoContainer{
+ margin-bottom: 10px;
+}
+.repoNameLine{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.repoName{
+  color:rgb(6, 6, 177);
+  font-weight: bolder;
+  font-size: 20px;
+}
+.starButton{
+  background: #999;
+  border-radius: 5px;
+  align-items: center;
+
+}
+
+.languageLine{
+  display: flex;
+  justify-content: space-between;
+}
+/*////*/
+.colors{
+  display: flex;
+}
+.red{
+  height:15px;
+  width:15px;
+  border-radius:50%;
+  background:red;
+  margin-right:10px;
+}
+.yellow{
+  height:15px;
+  width:15px;
+  border-radius:50%;
+  background:yellow;
+  margin-right:10px;
+}
+.purple{
+  height:15px;
+  width:15px;
+  border-radius:50%;
+  background:purple;
+  margin-right:10px;
+}
+.black{
+  height:15px;
+  width:15px;
+  border-radius:50%;
+  background:black;
+  margin-right:10px;
+}
+/*/////*/
