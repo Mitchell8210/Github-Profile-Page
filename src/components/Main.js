@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import {useDispatch, useSelector} from 'react-redux'
 import {getRepos} from '../reducers/dataReducer'
 import Icon from '../lib/Icon'
+import Moment from 'react-moment';
 
 export default function Main(props){
 
@@ -18,19 +19,19 @@ export default function Main(props){
         <div className="mainContainer">
             <div className="mainLinks">
                 <div>Overview</div>
-                <div>Repositories {repos.length}</div>
-                <div>Projects</div>
-                <div>Packages</div>
-                <div>Stars</div>
-                <div>Followers</div>
-                <div>Following</div>
+                <div>Repositories <span>{repos.length}</span></div>
+                <div>Projects<span>0</span></div>
+                <div>Packages <span>0</span></div>
+                <div>Stars <span>0</span></div>
+                <div>Followers <span>0</span></div>
+                <div>Following <span>0</span></div>
             </div>
             
             <div className="findRepositoryLine">
                 <input className="findRepositoryInput" type="text" placeholder="Find a repository..."></input>
-                <div className="typeButton">Type:<span>All</span></div>
-                <div className="languageButton">Language:<span>All</span></div>
-                <div className="newButton">New</div>
+                <button className="typeButton">Type:<span>All</span></button>
+                <button className="languageButton">Language:<span>All</span></button>
+                <button className="newButton"><Icon icon="book"></Icon>New</button>
             </div>
             <hr/>
             <div className="repositoryList">
@@ -41,8 +42,8 @@ export default function Main(props){
                     <div className="repoName">
                     <a target="_blank" href={repo.clone_url}>{repo.name}</a></div>
                     
-                    <div className="starButton">Starr
-                    </div>
+                    <button className="starButton">Star<Icon icon="star"></Icon>
+                    </button>
                     
                     
                     </div>
@@ -57,7 +58,7 @@ export default function Main(props){
                         }
                     })()}></div>
                     {repo.language}</div>
-                    <div>Updated on/at: {repo.updated_at}</div>
+                    <div className="updated">Updated <Moment fromNow>{repo.updated_at}</Moment></div>
                     </div>
                     <hr/>
                     </div>

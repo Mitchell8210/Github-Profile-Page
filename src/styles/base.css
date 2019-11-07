@@ -20,6 +20,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.components{
+  display: flex;
+  margin:auto;
+  width:1600px;
+}
+.main{
+  margin-left:100px;
+  margin-top:50px;
+}
 
 /* HEADER */
 .header{
@@ -65,6 +74,7 @@ font-size: 25px;
 .asideContainer{
   margin-left:100px;
   margin-top:50px;
+ 
 }
 .imageContainer{
   border:1px solid #777;
@@ -101,9 +111,9 @@ img{
 /*/////MAIN SECTION */
 
 .mainContainer{
-  width:600px;
-
+  width:800px;
   align-content: right;
+
 }
 .mainLinks{
   display: flex;
@@ -113,7 +123,17 @@ img{
 }
 .mainLinks div{
   padding-right:15px;
+  display: flex;
 }
+.mainLinks span{
+  text-align: center;
+  align-items: center;
+  margin-left:10px;
+  width:20px;
+  background:#888;
+  border-radius: 50%;
+}
+
 
 /*//FIND REPOS LINE///*/
 .findRepositoryLine{
@@ -123,11 +143,28 @@ img{
   margin-right:20px;
   height:30px;
   width:200px;
+  width:500px;
 }
 .findRepositoryLine div{
   margin-right:20px;
 }
+.typeButton{
+  margin-right:20px;
+}
+.languageButton{
+  margin-right:20px;
+}
+.newButton{
+  background:rgb(54,183,77);
 
+}
+.newButton i{
+  font-size: 20px;
+}
+.fa-book{
+  color:white;
+  margin-right:5px;
+}
 /*///RESPOSITORIES//*/
 
 .repoContainer{
@@ -142,6 +179,15 @@ img{
   color:rgb(6, 6, 177);
   font-weight: bolder;
   font-size: 20px;
+  
+}
+.repoName a{
+  text-decoration: none;
+  color:rgb(6, 6, 177);
+}
+
+.repoName a:hover{
+  text-decoration: underline;
 }
 .starButton{
   background: #999;
@@ -152,7 +198,10 @@ img{
 
 .languageLine{
   display: flex;
-  justify-content: space-between;
+
+}
+.updated{
+  margin-left:25px;
 }
 /*////*/
 .colors{
@@ -187,3 +236,26 @@ img{
   margin-right:10px;
 }
 /*/////*/
+/*////FOOTER////*/
+
+.footerLinks{
+  display: flex;
+  justify-content: center;
+}
+.footerLinks div{
+  margin-right:
+  20px;
+  
+}
+.leftFooterLinks{
+  display: flex;
+}
+.leftFooterLinks div{
+  margin-right:20px;
+}
+.rightFooterLinks{
+  display: flex;
+}
+.rightFooterLinks div{
+  margin-right:20px;
+}
